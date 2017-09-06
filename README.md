@@ -1,2 +1,4 @@
-# 3jg.github.io
+# tripledjeydgi.github.io
 BlogSMD-UFC
+
+J. Vitor / Johny / Josué / Graciano
