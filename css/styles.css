@@ -10,32 +10,22 @@ body::before {
     top: 0;
     position: fixed;
 }
-@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
-       (max-width: 512px)  and (min-resolution: 1.5dppx),
-       (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
-       (max-width: 1024px) and (max-resolution: 1.5dppx) {
-  body::before {
+body::before {
     background-image: url('../img/bg.jpg');
-  }
+	filter: blur(7px);
 }
-@media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
-       (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
-       (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
-       (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
-  body::before {
-    background-image: url('../img/bg.jpg');
-  }
-}
-@media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
-       (min-width: 1025px) and (min-resolution: 1.5dppx),
-       (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
-       (min-width: 2049px) and (max-resolution: 1.5dppx) {
-  body::before {
-    background-image: url('../img/bg.jpg');
-  }
-}
+
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.texto_simples {
+	padding: 0% 5%;
+}
+
+.texto_simples span{
+	color: blue;
+	font-weight: bold;
 }
 
 .demo-blog .demo-blog__posts {
@@ -103,9 +93,11 @@ body .demo-blog {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  /*
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+		  */
 }
 .demo-blog .mdl-card__supporting-text strong {
   font-weight: 400;
@@ -223,8 +215,8 @@ body .demo-blog {
 .demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('../img/road.jpg');
 }
-.demo-blog .shopping .mdl-card__media {
-  background-image: url('../img/shopping.jpg');
+.demo-blog .enunciado .mdl-card__media {
+  background-image: url('../img/enunciado.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -282,8 +274,8 @@ body .demo-blog {
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
-.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('../img/road_big.jpg');
+.demo-blog--blogpost .enunciado_pag > .mdl-card .mdl-card__media {
+  background-image: url('../img/enunciado.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -454,6 +446,10 @@ body .demo-blog {
   background-size: 50%;
   border-radius: 22px;
   background-color: #F5F5F5;
+}
+
+.missaodada {
+  width: 50%;
 }
 
 /* Fixes for IE 10 */
